@@ -1,0 +1,37 @@
+
+footer{
+    animation-duration: 0.5s;
+    animation-name: slide-in-left;
+
+}
+
+.divider{
+    font-size: 24px;
+}
+.footer__text{
+    position: relative;
+    box-shadow: 0 0px 10px  rgb(0 0 0 / 0.2);
+    margin: 72px 0;
+    padding: 72px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 0.06cm;
+}
+
+@media(max-width:860px){
+    .footer__text{
+        top:210px;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

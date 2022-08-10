@@ -1,0 +1,296 @@
+/*
+
+LANDING SECTION
+
+*/
+.home__wrapper{
+    animation-duration: 0.5s;
+    animation-name: slide-in-right;
+    padding: 0 24px;
+}
+.home{
+    top:88px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+.home__Img--wrapper{
+    width: 100%;
+    padding: 0 24px;
+    
+}
+.home__Img{
+    width: 100%;
+    
+}
+.info{
+  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+.info__detail{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 64px;
+}
+.info__text{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: rgb(162, 162, 162);
+}
+.info__text--contacts{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+.red{
+    color: rgb(150, 0, 0);
+    transition: all 300ms ease;
+}
+
+.icon{
+    margin-right: 16px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.no__margin{
+    margin-right: 0;
+
+}
+.red__hover:hover{
+    color: rgb(150, 0, 0);
+}
+
+
+/*
+
+WELCOME SECTION
+
+*/
+
+.welcome{
+    position: relative;
+    margin-top: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.welcome__intro{
+    margin-top: 44px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.welcome__title{
+    letter-spacing: 0.2cm;
+    margin-bottom: 44px;
+    color: rgb(54, 54, 54);
+
+}
+.welcome__text--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome__pic--wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome__pic{
+    width: 80%;
+    max-width: 500px;
+}
+.border__bottom{
+    width: 33%;
+    transform: translateX(100%);
+    border-bottom:1px solid #c9adad ;
+    
+}
+.welcome__text{
+    width: 70%;
+    color: rgb(133, 133, 133);
+    line-height: 1.7;
+   
+}
+
+.get__cats--btn{
+    margin-top: 32px;
+    color: black;
+    background-color: white;
+    padding: 12px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.get__cats--btn:hover{
+    background-color: black;
+    color: white;
+
+}
+
+/*
+
+I Took inspiration from a few creative loading options I saw online
+https://webdeasy.de/en/css-loading-animations/
+
+*/
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #000000;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #000000;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@media(max-width:1200px){
+    .home{
+        padding-top: 144px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+    .home__Img--wrapper{
+        
+        width: 100%;
+    }
+    .info{
+        
+        padding-top: 72px;
+        width: 80% ;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between; 
+        
+
+    }
+    .info__detail{
+        height: 100%;
+        margin-bottom: 0;
+    
+    }
+    .info__title{
+        margin-bottom: 28px;
+    }
+    .welcome{
+        padding-top: 10% ;
+    }
+}
+@media(max-width:860px){
+    .home{
+        top:210px;
+        padding-top: 0;
+        
+    }
+    .home__Img--wrapper{
+        padding: 0;
+        width: 100%;
+    }
+    .welcome{
+        top:210px;
+    }
+    .info{
+        display: flex;
+        flex-direction:column;
+       
+    }
+    .info__detail{
+        height: 100%;
+        margin-bottom: 54px;
+        font-size: 18px;
+    
+    }
+    .info__title{
+        text-align: center;
+    }
+    .info__text{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .welcome{
+        margin-top: 10%;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
